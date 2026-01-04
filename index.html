@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Paper collected by Wang</title>
+<title>arXiv Papers of Physics-Informed AI</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 
@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -41,9 +41,8 @@ span#abs{
 }
 </style>
 </head>
-<body>
-
-</p></br></br><div id='section'>Paperid: <span id='pid'>1, <a href='https://arxiv.org/pdf/2512.23964.pdf' target='_blank'>https://arxiv.org/pdf/2512.23964.pdf</a></span>   <span><a href='https://github.com/acostacos/dual_flood_gnn' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Carlo Malapad Acosta, Herath Mudiyanselage Viraj Vidura Herath, Jia Yu Lim, Abhishek Saha, Sanka Rasnayaka, Lucy Marshall
+<body><div id='title' style='font-size:1.3em; font-weight:bold;'>arXiv Papers of Physics-Informed AI</div><br>
+<div id='section'>Paperid: <span id='pid'>1, <a href='https://arxiv.org/pdf/2512.23964.pdf' target='_blank'>https://arxiv.org/pdf/2512.23964.pdf</a></span>   <span><a href='https://github.com/acostacos/dual_flood_gnn' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Carlo Malapad Acosta, Herath Mudiyanselage Viraj Vidura Herath, Jia Yu Lim, Abhishek Saha, Sanka Rasnayaka, Lucy Marshall
 </span></div><div id="title">Title: <a href="https://arxiv.org/html/2512.23964">Physics-informed Graph Neural Networks for Operational Flood Modeling</a></div></span></div><div id = 'abs'>Abstract:</br> <span id = 'abs'>Flood models inform strategic disaster management by simulating the spatiotemporal hydrodynamics of flooding. While physics-based numerical flood models are accurate, their substantial computational cost limits their use in operational settings where rapid predictions are essential. Models designed with graph neural networks (GNNs) provide both speed and accuracy while having the ability to process unstructured spatial domains. Given its flexible input and architecture, GNNs can be leveraged alongside physics-informed techniques with ease, significantly improving interpretability. This study introduces a novel flood GNN architecture, DUALFloodGNN, which embeds physical constraints at both global and local scales through explicit loss terms. The model jointly predicts water volume at nodes and flow along edges through a shared message-passing framework. To improve performance for autoregressive inference, model training is conducted with a multi-step loss enhanced with dynamic curriculum learning. Compared with standard GNN architectures and state-of-the-art GNN flood models, DUALFloodGNN achieves substantial improvements in predicting multiple hydrologic variables while maintaining high computational efficiency. The model is open-sourced at https://github.com/acostacos/dual_flood_gnn.
 <div id='section'>Paperid: <span id='pid'>2, <a href='https://arxiv.org/pdf/2512.22261.pdf' target='_blank'>https://arxiv.org/pdf/2512.22261.pdf</a></span>   <span><a href='https://github.com/Reckonchamp12/physics-constraint-paradox' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Rahul D Ray
 </span></div><div id="title">Title: <a href="https://arxiv.org/html/2512.22261">The Physics Constraint Paradox: When Removing Explicit Constraints Improves Physics-Informed Data for Machine Learning</a></div></span></div><div id = 'abs'>Abstract:</br> <span id = 'abs'>Physics-constrained data generation is essential for machine learning in scientific domains where real data are scarce; however, existing approaches often over-constrain models without identifying which physical components are necessary. We present a systematic ablation study of a physics-informed grating coupler spectrum generator that maps five geometric parameters to 100-point spectral responses. By selectively removing explicit energy conservation enforcement, Fabry-Perot oscillations, bandwidth variation, and noise, we uncover a physics constraint paradox: explicit energy conservation enforcement is mathematically redundant when the underlying equations are physically consistent, with constrained and unconstrained variants achieving identical conservation accuracy (mean error approximately 7 x 10^-9). In contrast, Fabry-Perot oscillations dominate threshold-based bandwidth variability, accounting for a 72 percent reduction in half-maximum bandwidth spread when removed (with bandwidth spread reduced from 132.3 nm to 37.4 nm). We further identify a subtle pitfall: standard noise-addition-plus-renormalization pipelines introduce 0.5 percent unphysical negative absorption values. The generator operates at 200 samples per second, enabling high-throughput data generation and remaining orders of magnitude faster than typical full-wave solvers reported in the literature. Finally, downstream machine learning evaluation reveals a clear physics-learnability trade-off: while central wavelength prediction remains unaffected, removing Fabry-Perot oscillations improves bandwidth prediction accuracy by 31.3 percent in R-squared and reduces RMSE by 73.8 percent. These findings provide actionable guidance for physics-informed dataset design and highlight machine learning performance as a diagnostic tool for assessing constraint relevance.
